@@ -24,28 +24,30 @@
   background: transparent;
   position: relative;
   border-radius: 20px;
-
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 1px solid #00597c;
-  background: #00597c;
+  border: 1px solid #003c85;
+  background: #003c85;
   transition: 0.5s;
 }
 
 .dark-btn {
-  font-size: 1rem;
-  font-weight: 400;
-  background-color: #00b7ff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none !important;
-  transition: all 0.5s;
+    display: inline-block;
+    text-decoration: none;
+    color: #003c85;
+    border: 1px solid #003c85;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .dark-btn:hover {
-  background-color: #b4e7fb;
-  color: #00597c;
+    color: #ffffff;
+    border: 1px solid #003c85;
+    background: #003c85;
+    transition: 0.5s;
 }
 
 nav {
@@ -184,7 +186,7 @@ h3 {
 }
 
 .help-col:hover {
-  background-color: #d9f4ff;
+  background-color: #dff6ff;
 }
 
 @media (max-width: 700px) {
@@ -287,44 +289,35 @@ h3 {
   }
 }
 
-/* About section */
-/* .about-sec{
-    padding: 150px 0;
-    background-color: #d9f4ff;
+/* Contact Us */
+.contact-box {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 50px 80px;
+  padding: 30px 40px;
+}
+.contact-box h3 {
+  text-align: left;
+}
+.contact-form input, .contact-form textarea, .contact-form select{
+  border-radius: 20px;
+    width: 100%;
+  padding: 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #dff6ff;
+}
+.contact-form button {
+    margin: 10px 0;;
+}
+@media (max-width: 700px) {
+    .contact-box {
+        margin: 50px 50px;
+        }
 }
 
-.about-sec img{
-    width: 350px;
-    border: 5px solid #303054;
-    border-radius: 5px;
-}
-
-.about-sec .about-txt p{
-    font-size: 18px;
-} */
-
-/* Conatact Us */
-/* .contact-section {
-    padding: 150px 0 80px;
-}
-
-.contact-section .contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-section .contact-form .form-control {
-    height: 50px;
-    border-radius: 5px;
-}
-
-.contact-section .contact-form textarea.form-control {
-    height: 120px;
-    margin-bottom: 10px;
-}
-
-.contact-section .contact-form .form-control:focus {
-    box-shadow: none;
-} */
 
 /*---footer-----*/
 .footer {
@@ -333,9 +326,9 @@ h3 {
   padding: 30px 0;
 }
 
-.mission{
-    background-color: #dff6ff;
-    padding: 30px;
+.mission {
+  background-color: #dff6ff;
+  padding: 30px;
 }
 .footer h4 {
   margin-bottom: 25px;

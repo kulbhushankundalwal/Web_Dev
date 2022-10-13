@@ -74,12 +74,30 @@ nav img {
   padding: 12px 34px;
   background: transparent;
   position: relative;
+  border-radius: 20px;
+
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 1px solid  rgb(0, 183, 255);
-  background:  rgb(0, 183, 255);
+  border: 1px solid  #00597c;
+  background:  #00597c;
   transition: .5s;
+}
+
+/* Buttons */
+.dark-btn{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #00b7ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: all 0.5s;
+}
+.dark-btn:hover{
+    background-color: #b4e7fb;
+    color: #00597c;
 }
 
 nav .fa {
@@ -172,7 +190,10 @@ h3 {
 }
 /*-----How does it work?-----*/
 .working {
+    /* background-color: #d9f4ff; */
   width: 80%;
+  /* padding-left: 15%;
+  padding-right: 15%; */
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -237,11 +258,11 @@ h3 {
     margin-right: 15px;
   }
 }
-/*------action img----*/
+/*------Other Waste----*/
 .cta {
   margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/OtherWaste.jpeg);
 
   background-position: center;
   background-size: cover;
@@ -261,13 +282,54 @@ h3 {
     font-size: 24px;
   }
 }
+
+/* About section */
+/* .about-sec{
+    padding: 150px 0;
+    background-color: #d9f4ff;
+}
+
+.about-sec img{
+    width: 350px;
+    border: 5px solid #303054;
+    border-radius: 5px;
+}
+
+.about-sec .about-txt p{
+    font-size: 18px;
+} */
+
+/* Conatact Us */
+/* .contact-section {
+    padding: 150px 0 80px;
+}
+
+.contact-section .contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-form .form-control {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.contact-section .contact-form textarea.form-control {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.contact-section .contact-form .form-control:focus {
+    box-shadow: none;
+} */
+
+
 /*---footer-----*/
 .footer {
   width: 100%;
   text-align: center;
   padding: 30px 0;
 }
-.footer:h4 {
+.footer h4 {
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Thanks4Food - COME TOGETHER TO FEED THE FUTURE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">DONATE FOOD</a></li>
+                    <li><a href="">GET FOOD</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>COME TOGETHER TO FEED THE FUTURE</h1>
+            <p>Food donations help feed the poor and hungry. <br> Which can save the lives of
+                impoverished, destitute, and homeless individuals. <br> Millions of underprivileged children and adults
+                do not get proper food to eat.</p>
+            <a href="" class="hero-btn">......</a>
+        </div>
+    </section>
+    <!------ Donate or get Food ------->
+
+    <section class="help">
+        <h1>Donate or get Food</h1>
+        <p><i>"Always give without remembering and always receive without forgetting"</i></p>
+        <div class="row">
+            <div class="help-col">
+                <h3>DONATE FOOD</h3>
+                <p><i>“Service to others is the rent you pay for your room here on earth."</i></p>
+            </div>
+            <div class="help-col">
+                <h3>GET FOOD</h3>
+                <p><i>“Everyone can be great because everyone can serve."</i></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!------How does it work?------>
+
+    <section class="working">
+        <h1>How does it work?</h1>
+        <p>To provide unconditional help to the poor, needy, and homeless by providing food for free, the process works as follows -</p>
+        <div class="row">
+            <div class="working-col">
+                <img src="/list.jpg">
+                <h3>1. List the food</h3>
+                <p>User can list the food & it's description using the website.</p>
+            </div>
+            <div class="working-col">
+                <img src="/pickup.jpg">
+                <h3>2. Pickup the food</h3>
+                <p>Any non profit organisation will pickup the food from the nearest location using the list.</p>
+            </div>
+            <div class="working-col">
+                <img src="/serve.jpg">
+                <h3>3. Serve the food</h3>
+                <p>The organisation will serve the food and happiness.</p>
+            </div>
+        </div>
+
+    </section>
+    <!------testimonials------>
+
+    <section class="testimonials">
+        <h1>What People Says</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="/raah.jpeg">
+                <div>
+                    <p>We always try to get food for the hungry poors, this website helps us to get food easily</p>
+                    <h3>Raah Charitable Trust</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="/Mahendrs.jpeg">
+                <div>
+                    <p>We had a marriage function, Thanks4Food helped us to donate leftover food flawlessly.</p>
+                    <h3>Mahendra Kumar</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--call to action-->
+
+    <section class="cta">
+        <h1></h1>
+        <a href="" class="hero-btn">KK</a>
+    </section>
+
+    <!------footer------>
+
+    <section class="footer">
+        <h4>GROUP INTFORMATION</h4>
+        <p>You can follow us on</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i>Ayush Rana ,Yash Rajput , Kulbbhushan</p>
+    </section>
+
+    <section>
+
+        <!------JavaScript for toggle menu------->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

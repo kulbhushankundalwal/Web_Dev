@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Thanks4Food - COME TOGETHER TO FEED THE FUTURE</title>
+    <title>Thanks4Food - Donate Food</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 
 <body>
 
-    <section class="header">
+    <section class="sub-header">
         <nav>
             <a href="index.html"><img src="/logo.png"></a>
             <div class="nav-links" id="navlinks">
@@ -28,111 +28,103 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1>COME TOGETHER TO FEED THE FUTURE</h1>
-            <p>Food donations help feed the poor and hungry. <br> Which can save the lives of
-                impoverished, destitute, and homeless individuals. <br> Millions of underprivileged children and adults
-                do not get proper food to eat.</p>
-            <a href="/Donate.html" class="hero-btn">DONATE FOOD</a>
-        </div>
+        <h1>Donate Food</h1>
     </section>
 
+    <!-- Donate food -->
 
-
-<!-- Donate food -->
-
-<body>
-    <div class="contact-box">
-        <div class="contact-form">
-            <h2>Register Here</h2>
-            <form id="register" method="post">
-                <label>Donor Name : </label>
+    <body>
+        <div class="contact-box">
+            <div class="contact-form">
+                <h2>Enter Food Description</h2>
                 <br>
-                <input type="text" name="lname" id="name" placeholder="Enter Donor name">
-                <br><br>
-                <label>line no.22: </label>
-                <br>
-                <input type="text" name="age" id="name" placeholder="btao kya likhu">
-                <br><br>
-                
+                <form action="/action.php">
+                    <label>Donor Name: </label>
+                    <br>
+                    <input type="text" name="donarname" id="name" placeholder="Enter Donor name">
+                    <br><br>
+                    <label>Phone Number: </label>
+                    <br>
+                    <input type="tel" name="number" id="number" placeholder="Enter 10 Digit Phone Number" pattern="[0-9]{10}" required>
+                    <br> <br>
+                    <label>Email :</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your valid email address">
+                    <br><br>
+                    <label>Address :</label>
+                    <br>
+                    <input type="text" placeholder="Enter Address">
+                    <br><br>
+                    <label> Foods Quantity: </label>
+                    <br>
+                    <input type="number" name="qty" id="qty" placeholder="Enter Quantity" min="1">
+                    <label for="kg">
+                        <input class="radio" type="radio" name="qty" value="kg" id="kg"> Kg
+                    </label>
+                    <label for="plates">
+                        <input class="radio" type="radio" name="qty" value="plates" id="plates"> Plates
+                    </label>
+                    <br> <br><br>
+                    <label> How old is Food? (In Hours): </label>
+                    <br>
+                    <input type="number" name="qty" id="qty" placeholder="Enter No. of hours" min="1" max="36">
+                    <br><br>
+                    <label> Food Type: </label>
+                    <br>
+                    <select name="foodtype" id="foodtype">
+                        <option value="Veg">Veg</option>
+                        <option value="NonVeg">Non-Veg</option>
+                        <option value="Both">Both</option>
+                        <option value="Raw">Raw</option>
+                    </select>
+                    <br><br>
+                    <label>Message :</label>
+                    <br>
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <br<br>
+                    <button type="submit" class="dark-btn">Submit Details</button>
 
-                <label> Foods Quantity : </label>
-                <br>
-                <input type="number" name="fname" id="name" placeholder="Quantity" required>
-                <input type="radio" name="fname" id="Kg">
-                &nbsp;
-                <span id="Kg">Kg</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="fname" id="per plates">
-                &nbsp;
-                <span id="per plates">Per plates</span>
-                <br> <br>
+                </form>
 
-
-                <br>
-                <input type="number" name="fname" id="name" placeholder="Quantity" required>
-                <br> <br>
-                <label>Phone Number: </label>
-                <br>
-                <input type="tel" name="num" id="name" placeholder="1234567890" pattern="[0-9]{10}" required>
-                <br> <br>
-                <label>Email :</label>
-                <br>
-                <input type="email" name="email" id="name" placeholder="Enter your valid email address">
-                <br><br>
-                <label> food type</label>
-                <br>
-                &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="gender" id="veg">
-                &nbsp;
-                <span id="male">Veg</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="gender" id="Non-veg">
-                &nbsp;
-                <span id="Non-veg">Non-veg</span>
-                <br><br>
-                <br<br>
-                    <input type="submit" value="submit" name="submit" id="submit">
-
-            </form>
-
-        </div><!-- end register -->
-    </div>
-    <!--end main-->
-
-    <!------footer------>
-
-    <section class="footer">
-        <div class="mission">
-            <h4>Our Mission</h4>
-            <p>In India, nearly about 1000 people sleep without food who are really unfortunate to get food and cause
-                diseases like Starvation, Malnutrition, etc. <br> So the main aim of this website is to stop hunger and
-                provide them with food.</p>
-
+            </div><!-- end register -->
         </div>
-        <div class="icons">
-            <p>Powered by <a href="https://kkworld.in/">KKWorld.in</a></p>
-            <a href="https://youtube.com/kkworld"><i class="fa fa-youtube"></i></a>
-            <a href="https://instagram.com/kkworld.in"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/@kkworldofficial"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.facebook.com/kkworldofficial"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p>Made with <i class="fa fa-heart-o"></i> by Ayush, Yash Rajput & Kulbhushan</p>
-    </section>
+        <!--end main-->
 
-    <section>
+        <!------footer------>
 
-        <!------JavaScript for toggle menu------->
-        <script>
-            var navlinks = document.getElementById("navlinks");
+        <section class="footer">
+            <div class="mission">
+                <h4>Our Mission</h4>
+                <p>In India, nearly about 1000 people sleep without food who are really unfortunate to get food and
+                    cause
+                    diseases like Starvation, Malnutrition, etc. <br> So the main aim of this website is to stop hunger
+                    and
+                    provide them with food.</p>
 
-            function showMenu() {
-                navlinks.style.right = "0";
-            }
-            function hideMenu() {
-                navlinks.style.right = "-200px";
-            }
-        </script>
-</body>
+            </div>
+            <div class="icons">
+                <p>Powered by <a href="https://kkworld.in/">KKWorld.in</a></p>
+                <a href="https://youtube.com/kkworld"><i class="fa fa-youtube"></i></a>
+                <a href="https://instagram.com/kkworld.in"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/@kkworldofficial"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/kkworldofficial"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Ayush, Yash Rajput & Kulbhushan</p>
+        </section>
+
+        <section>
+
+            <!------JavaScript for toggle menu------->
+            <script>
+                var navlinks = document.getElementById("navlinks");
+
+                function showMenu() {
+                    navlinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navlinks.style.right = "-200px";
+                }
+            </script>
+    </body>
 
 </html>

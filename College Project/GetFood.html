@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Thanks4Food - COME TOGETHER TO FEED THE FUTURE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/Donate.html">DONATE FOOD</a></li>
+                    <li><a href="/GetFood.html">GET FOOD</a></li>
+                    <li><a href="/index.html#contact">CONTACT US</a></li>
+                    <li><a href="/about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>COME TOGETHER TO FEED THE FUTURE</h1>
+            <p>Food donations help feed the poor and hungry. <br> Which can save the lives of
+                impoverished, destitute, and homeless individuals. <br> Millions of underprivileged children and adults
+                do not get proper food to eat.</p>
+            <a href="/Donate.html" class="hero-btn">DONATE FOOD</a>
+        </div>
+    </section>
+
+<!-- Get Food -->
+<body>
+    <div class="contact-box" id="contact">
+        <div class="contact-form">
+            <h2>Register Here</h2>
+            <form id="register" method="post">
+                <label> Name : </label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter your name">
+                <br><br>
+                <label>Address: </label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter your address">
+                <br><br>
+            
+                <br> <br>
+                <label>Phone Number: </label>
+                <br>
+                
+                <input type="tel" name="num" id="name" placeholder="1234567890" pattern="[0-9]{10}" required>
+                <br> <br>
+                <label>Email :</label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter your valid email address">
+                <br><br>
+                
+            </form>
+
+        </div><!-- end register -->
+    </div>
+    <!--end main-->
+
+    
+    <!------footer------>
+
+    <section class="footer">
+        <div class="mission">
+            <h4>Our Mission</h4>
+            <p>In India, nearly about 1000 people sleep without food who are really unfortunate to get food and cause
+                diseases like Starvation, Malnutrition, etc. <br> So the main aim of this website is to stop hunger and
+                provide them with food.</p>
+
+        </div>
+        <div class="icons">
+            <p>Powered by <a href="https://kkworld.in/">KKWorld.in</a></p>
+            <a href="https://youtube.com/kkworld"><i class="fa fa-youtube"></i></a>
+            <a href="https://instagram.com/kkworld.in"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/@kkworldofficial"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/kkworldofficial"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Ayush, Yash Rajput & Kulbhushan</p>
+    </section>
+
+    <section>
+
+        <!------JavaScript for toggle menu------->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

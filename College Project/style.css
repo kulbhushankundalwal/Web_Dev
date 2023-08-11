@@ -27,6 +27,7 @@
   cursor: pointer;
 }
 .hero-btn:hover {
+  color: #ffffff;
   border: 1px solid #003c85;
   background: #003c85;
   transition: 0.5s;
@@ -164,6 +165,12 @@ p {
   padding: 10px;
 }
 .row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.help-row {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
@@ -371,7 +378,7 @@ h3 {
 }
 
 .icons a{
-  color: #b4e7fb;
+  color: hsl(197, 90%, 85%);
   text-decoration: underline;
   margin-bottom: -10px;
 }
@@ -403,7 +410,7 @@ h3 {
     margin-top: 50px;
 }
 
-.about-us{
+ .about-us{
     width: 85%;
     margin: auto;
     padding-top: 40px;
@@ -423,3 +430,24 @@ h3 {
 .about-col p{
     padding: 15px 0 25px;
 }
+
+
+/* Get Food Table */
+
+.getfood-tab {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 50px 5%;
+  padding: 30px 40px;
+}
+
+@media (max-width: 800px) {
+  .getfood-tab {
+      margin: 50px 20px;
+      }
+}
+
+/* .temp h6, p{
+  display: inline;
+} */

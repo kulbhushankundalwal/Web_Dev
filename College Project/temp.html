@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Playlist Length Calculator</title>
+</head>
+<body>
+  <form>
+    <label for="playlist-url">Enter the URL of the YouTube playlist:</label><br>
+    <input type="text" id="playlist-url" name="playlist-url"><br>
+    <button type="button" onclick="calculatePlaylistLength()">Calculate Playlist Length</button>
+  </form>
+  <br>
+  <div id="playlist-length"></div>
+  
+  <script>
+    function calculatePlaylistLength() {
+      // Get the playlist URL from the form
+      var playlistUrl = document.getElementById("playlist-url").value;
+      
+      // Extract the playlist ID from the URL
+      var playlistId = playlistUrl.match(/^.*(youtu.be\/|list=)([^#\&\?]*).*/)[2];
+      
+      // Use the YouTube API to get information about the playlist
+      var apiUrl = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=" + playlistId + "&key=YOUR_API_KEY";
+      
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", apiUrl);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          // Parse the response from the API
+          var playlistData = JSON.parse(xhr.responseText);
+          
+          // Calculate the total length of the playlist
+          var playlistLength = 0;
+          for (var i = 0; i < playlistData.items.length; i++) {
+            var videoDuration = playlistData.items[i].contentDetails.duration;
+            playlistLength += parseInt(videoDuration.match(/PT(\d+)M(\d+)S/)[1]) * 60 + parseInt(videoDuration.match(/PT(\d+)M(\d+)S/)[2]);
+          }
+          
+          // Display the calculated playlist length to the user
+          document.getElementById("playlist-length").innerHTML = "Playlist length: " + playlistLength + " minutes";
+        } else {
+          alert("An error occurred while trying to retrieve the playlist data from the YouTube API.");
+        }
+      };
+      xhr.send();
+    }
+  </script>
+</body>
+</html>

@@ -10,9 +10,18 @@ const listingSchema = new Schema({
   image: {
     type: String,
     //Setting default value
-    set: (v) => v==="" ? "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F496310821404619189%2F&psig=AOvVaw1R81RHnc9qbUtA-6Nc1NGq&ust=1697362519279000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjN-6Ge9YEDFQAAAAAdAAAAABAK" : v;
+    default:
+      "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    set: (v) =>
+      v === ""
+        ? "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        : v,
   },
   price: Number,
   location: String,
   country: String,
 });
+
+const Listing = mongoose.model("Listing", listingSchema);
+
+module.exports = Listing;

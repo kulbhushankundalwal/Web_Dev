@@ -12,6 +12,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
       <div class="navbar-nav">
         <a class="nav-link" href="/">Home</a>
         <a class="nav-link" href="/listings">All Listings</a>
@@ -19,15 +20,23 @@
       </div>
 
       <div class="navbar-nav ms-auto">
+        <form class="d-flex search" role="search">
+          <input class="form-control rounded-start-pill" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-danger d-flex justify-content-center align-items-center rounded-end-pill" type="submit">
+            <i class="fa-solid fa-magnifying-glass me-2"></i>
+            Search</button>
+        </form>
+
         <% if(!currUser) {%>
         <a class="nav-link" href="/signup">Sign Up</a>
-        <a class="nav-link" href="/login">Log In</a>
+        <a class="nav-link" href="/login"> <b>Log In</b></a>
         <% } %>
-        
+      
         <% if(currUser) {%>
-        <a class="nav-link" href="/logout">Log Out</a>
+        <a class="nav-link" href="/logout"><b> Log Out</b></a>
         <% } %>
       </div>
+
     </div>
   </div>
 </nav>
